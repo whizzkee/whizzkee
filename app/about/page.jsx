@@ -8,7 +8,7 @@ const AboutPage = () => {
       <Nav />
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 p-4 text-white">
         <div className="w-full max-w-4xl bg-gray-800 p-10 rounded-lg shadow-2xl">
-          <div className="flex flex-col md:flex-row items-center md:justify-between mb-12">
+          <div className="flex flex-col items-center md:flex-row md:items-center md:justify-between mb-12">
             <div className="flex-shrink-0 mb-6 md:mb-0">
               <Image
                 src="/images/aboutImg.jpg"
@@ -18,19 +18,19 @@ const AboutPage = () => {
                 className="rounded-full"
               />
             </div>
-            <div className="md:w-2/3">
-              <h1 className="text-4xl font-bold text-cyan-400 mb-2">
-                Trevor Johnson
+            <div className="sm:w-full md:w-2/3">
+              <h1 className="text-4xl font-bold text-cyan-400 mb-2 text-center sm:text-left">
+                Trevor
               </h1>
-              <h2 className="text-xl text-gray-300 mb-4">
+              <h2 className="text-xl text-gray-300 mb-4 text-center sm:text-left">
                 Software Engineer &amp; Writer
               </h2>
-              <div className="flex items-center text-cyan-500">
+              <div className="flex justify-center md:justify-start items-center text-cyan-500">
                 <FaCode className="mr-2" /> <span>Frontend Developer</span>
                 <span className="mx-4">|</span>
                 <FaLaptopCode className="mr-2" /> <span>Web3 Explorer</span>
                 <span className="mx-4">|</span>
-                <FaEthereum className="mr-2" />{" "}
+                <FaEthereum className="mr-2" />
                 <span>Blockchain Proponent</span>
               </div>
             </div>

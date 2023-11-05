@@ -42,15 +42,16 @@ const HomePage = () => {
         </div>
 
         {/* Central Welcome Card */}
-        <div className="flex flex-col items-center justify-center p-8 bg-sky-950 text-white rounded-lg shadow-xl md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 space-y-4">
-          <div className="flex items-center space-x-2 text-2xl">
-            {" "}
-            Welcome to
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-emerald-500 font-bold">
-              &nbsp;whizzkee.xyz
+        <div className="flex flex-col items-center justify-center p-4 md:p-8 bg-sky-950 text-white rounded-lg shadow-xl md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3 space-y-2 md:space-y-4">
+          <div className="text-center text-xl md:text-2xl">
+            Welcome to&nbsp;
+            <span className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-emerald-500 font-bold">
+              whizzkee.xyz
             </span>
           </div>
-          <p className="text-lg">I write stuff and build things</p>{" "}
+          <p className="text-center text-sm md:text-lg">
+            I write stuff and build things
+          </p>
         </div>
 
         {/* About Card */}
