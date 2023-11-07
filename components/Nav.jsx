@@ -25,10 +25,10 @@ const Nav = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
         <Image
-            src="/images/whizzkeeLogo2.png" // Ensure the path is correct
+            src="/images/whizzkeeLogo2.png"
             alt="Whizzkee Logo"
-            width={40} // Specify the width
-            height={25} // Specify the height
+            width={40}
+            height={25}
           />
         </div>
         <div className="hidden md:flex space-x-4">
