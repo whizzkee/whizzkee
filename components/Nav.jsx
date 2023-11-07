@@ -3,11 +3,11 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Image from "next/image";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Apply an animation class when the menu is opened
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("nav-open");
@@ -17,14 +17,19 @@ const Nav = () => {
   }, [isOpen]);
 
   const handleClose = () => {
-    setIsOpen(false); // Close the dropdown
+    setIsOpen(false);
   };
 
   return (
     <nav className="bg-gray-800 bg-opacity-60 text-white p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <span className="ml-3 text-xl">Trevor Johnson</span>
+        <Image
+            src="/images/whizzkeeLogo2.png" // Ensure the path is correct
+            alt="Whizzkee Logo"
+            width={40} // Specify the width
+            height={25} // Specify the height
+          />
         </div>
         <div className="hidden md:flex space-x-4">
           <Link href="/">
