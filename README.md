@@ -18,5 +18,3 @@ This repository contains the code for my personal website, which serves as a por
 - React
 - Tailwind CSS
 - Framer
-
-## Installation
