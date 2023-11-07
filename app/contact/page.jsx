@@ -97,12 +97,12 @@ const ContactPage = () => {
 
             <div className="mb-3">
             <button
-                type="submit"
-                className="bg-blue-500 text-white p-2 rounded hover:bg-blue-400 w-full"
-                aria-label="Send Message"
-              >
-                Send Message
-              </button>
+              type="submit"
+              className="bg-blue-700 text-white p-2 rounded hover:bg-blue-600 w-full"
+              aria-label="Send Message"
+            >
+              Send Message
+            </button>
             </div>
           </form>
         </div>
