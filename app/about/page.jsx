@@ -19,19 +19,24 @@ const AboutPage = () => {
               />
             </div>
             <div className="sm:w-full md:w-2/3">
-              <h1 className="text-4xl font-bold text-cyan-400 mb-2 text-center sm:text-left">
+              <h1 className="text-4xl font-bold text-cyan-400 mb-2 text-center md:text-left">
                 Trevor
               </h1>
-              <h2 className="text-xl text-gray-300 mb-4 text-center sm:text-left">
+              <h2 className="text-xl text-gray-300 mb-4 text-center md:text-left">
                 Software Engineer &amp; Writer
               </h2>
-              <div className="flex justify-center md:justify-start items-center text-cyan-500">
-                <FaCode className="mr-2" /> <span>Frontend Developer</span>
-                <span className="mx-4">|</span>
-                <FaLaptopCode className="mr-2" /> <span>Web3 Explorer</span>
-                <span className="mx-4">|</span>
-                <FaEthereum className="mr-2" />
-                <span>Blockchain Proponent</span>
+              <div className="flex flex-col md:flex-row justify-center md:justify-start items-center text-cyan-500 space-y-2 md:space-y-0 md:space-x-4">
+                <div className="flex items-center">
+                  <FaCode className="mr-2" /> <span>Frontend Developer</span>
+                </div>
+                <div className="hidden md:inline">|</div>
+                <div className="flex items-center">
+                  <FaLaptopCode className="mr-2" /> <span>Web3 Explorer</span>
+                </div>
+                <div className="hidden md:inline">|</div>
+                <div className="flex items-center">
+                  <FaEthereum className="mr-2" /> <span>Blockchain Proponent</span>
+                </div>
               </div>
             </div>
           </div>

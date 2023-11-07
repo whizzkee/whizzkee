@@ -61,41 +61,45 @@ const ContactPage = () => {
 
           <form action="https://formspree.io/f/mrgwjwvg" method="POST">
             <div className="mb-3">
-              <label className="block mb-1 font-medium text-white">Name</label>
+              <label htmlFor="name" className="block mb-1 font-medium text-white">Name</label>
               <input
+                id="name"
                 type="text"
                 name="name"
                 required
-                className="w-full p-2 border rounded text-white bg-gray-700 border-gray-600"
+                className="w-full p-2 border rounded text-black bg-gray-400 border-gray-600"
               />
             </div>
 
             <div className="mb-3">
-              <label className="block mb-1 font-medium text-white">Email</label>
+              <label htmlFor="email" className="block mb-1 font-medium text-white">Email</label>
               <input
+                id="email"
                 type="email"
                 name="email"
                 required
-                className="w-full p-2 border rounded text-white bg-gray-700 border-gray-600"
+                className="w-full p-2 border rounded text-black bg-gray-400 border-gray-600"
               />
             </div>
 
             <div className="mb-3">
-              <label className="block mb-1 font-medium text-white">
+              <label htmlFor="message" className="block mb-1 font-medium text-white">
                 Message
               </label>
               <textarea
+                id="message"
                 name="message"
                 rows="4"
                 required
-                className="w-full p-2 border rounded text-white bg-gray-700 border-gray-600"
+                className="w-full p-2 border rounded text-black bg-gray-400 border-gray-600"
               ></textarea>
             </div>
 
             <div className="mb-3">
-              <button
+            <button
                 type="submit"
-                className="bg-blue-500 text-white p-2 rounded hover:bg-blue-400"
+                className="bg-blue-500 text-white p-2 rounded hover:bg-blue-400 w-full"
+                aria-label="Send Message"
               >
                 Send Message
               </button>
