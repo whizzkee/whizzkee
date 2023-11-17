@@ -32,23 +32,23 @@ export default function Projects() {
           </div>
         </div>
 
-        {/* BloggingChain Card - Make card width more responsive */}
+        {/* Cronicle Card */}
         <div className="bg-gradient-to-tr from-dark-charcoal to-gray-800 rounded-xl shadow-2xl w-full sm:w-4/5 md:w-2/3 lg:w-1/2 p-8 space-y-6 transform hover:scale-105 hover:shadow-xl transition duration-500 ease-in-out">
           <div className="flex flex-col items-center">
             <Image
-              src="/images/bloggingChainLogo.png"
-              alt="BloggingChain Image"
+              src="/images/cronicleLogo.png"
+              alt="Cronicle Image"
               width={150}
               height={100}
               className="rounded-full border-4 border-blue-500"
             />
-            {/* Use responsive text sizes */}
             <h2 className="text-blue-300 mt-4 mb-2 font-bold text-2xl sm:text-3xl">
-              BloggingChain
+              Cronicle
             </h2>
             <p className="text-blue-200 text-center leading-relaxed text-sm sm:text-base">
-              An endeavor into the web3 domain, integrating the principles of
-              blogging and blockchain.
+              Cronicle is a pioneering blockchain-based blogging platform built
+              on Solana, designed to redefine the landscape of digital content
+              creation and monetization.
             </p>
           </div>
         </div>
