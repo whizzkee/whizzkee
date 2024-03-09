@@ -1,10 +1,9 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-import Image from 'next/image';
-import React from 'react';
-
+import { motion } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
+import React from "react";
 
 const HomePage = () => {
   // Define your animation variants
@@ -34,7 +33,7 @@ const HomePage = () => {
       opacity: 1,
       transition: {
         duration: 1, // Longer duration for a smoother appearance
-        ease: 'easeOut', // Easing function for a smoother effect
+        ease: "easeOut", // Easing function for a smoother effect
       },
     },
   };
@@ -46,7 +45,12 @@ const HomePage = () => {
         initial="hidden"
         animate="visible"
         // Adjust these for a smoother overall animation
-        transition={{ staggerChildren: 0.5, delayChildren: 0.2, duration: 1, ease: 'easeOut' }}
+        transition={{
+          staggerChildren: 0.5,
+          delayChildren: 0.2,
+          duration: 1,
+          ease: "easeOut",
+        }}
       >
         {/* Projects Card */}
         <motion.div
@@ -58,17 +62,17 @@ const HomePage = () => {
         >
           <Link href="/projects">
             <span className="block w-full h-full absolute inset-0 z-10" />
-          <Image
-            src="/images/whizzkeeProjectsImage.png"
-            alt="Projects Image"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg"
-          />
-          <div className="absolute inset-0 bg-black opacity-30 group-hover:opacity-60 z-10 rounded-lg transition-opacity duration-300"></div>
-          <span className="block text-center text-lg font-semibold text-white px-3 py-2 rounded z-20 relative transition duration-300">
-            Projects
-          </span>
+            <Image
+              src="/images/whizzkeeProjectsImage.png"
+              alt="Projects Image"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
+            <div className="absolute inset-0 bg-black opacity-30 group-hover:opacity-60 z-10 rounded-lg transition-opacity duration-300"></div>
+            <span className="block text-center text-lg font-semibold text-white px-3 py-2 rounded z-20 relative transition duration-300">
+              Projects
+            </span>
           </Link>
         </motion.div>
 
@@ -83,17 +87,17 @@ const HomePage = () => {
           <Link href="/contact">
             <span className="block w-full h-full absolute inset-0 z-10" />
 
-          <Image
-            src="/images/whizzkeeContactLandscapeImage.png"
-            alt="Contact Image"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg"
-          />
-          <div className="absolute inset-0 bg-black opacity-30 group-hover:opacity-60 z-10 rounded-lg transition-opacity duration-300"></div>
-          <span className="block text-center text-lg font-semibold text-white px-3 py-2 rounded z-20 relative transition duration-300">
-            Contact
-          </span>
+            <Image
+              src="/images/whizzkeeContactLandscapeImage.png"
+              alt="Contact Image"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
+            <div className="absolute inset-0 bg-black opacity-30 group-hover:opacity-60 z-10 rounded-lg transition-opacity duration-300"></div>
+            <span className="block text-center text-lg font-semibold text-white px-3 py-2 rounded z-20 relative transition duration-300">
+              Contact
+            </span>
           </Link>
         </motion.div>
 
@@ -128,17 +132,17 @@ const HomePage = () => {
           <Link href="/about">
             <span className="block w-full h-full absolute inset-0 z-10" />
 
-          <Image
-            src="/images/whizzkeeAboutPortraitImage.png"
-            alt="About Image"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg"
-          />
-          <div className="absolute inset-0 bg-black opacity-30 group-hover:opacity-60 z-10 rounded-lg transition-opacity duration-300"></div>
-          <span className="block text-center text-lg font-semibold text-white px-3 py-2 rounded z-20 relative transition duration-300">
-            About
-          </span>
+            <Image
+              src="/images/whizzkeeAboutPortraitImage.png"
+              alt="About Image"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
+            <div className="absolute inset-0 bg-black opacity-30 group-hover:opacity-60 z-10 rounded-lg transition-opacity duration-300"></div>
+            <span className="block text-center text-lg font-semibold text-white px-3 py-2 rounded z-20 relative transition duration-300">
+              About
+            </span>
           </Link>
         </motion.div>
 
@@ -150,24 +154,23 @@ const HomePage = () => {
           animate="visible"
           transition={{ duration: 0.5 }}
         >
-  <Link href="/blog">
-    <span className="block w-full h-full absolute inset-0 z-10" />
+          <Link href="/blog">
+            <span className="block w-full h-full absolute inset-0 z-10" />
 
-  <Image
-    src="/images/whizzkeeBlogImage.png"
-    alt="Blog Image"
-    layout="fill"
-    objectFit="cover"
-    className="rounded-lg"
-  />
-  <div className="absolute inset-0 bg-black opacity-30 group-hover:opacity-60 z-10 rounded-lg transition-opacity duration-300"></div>
-  <span className="block text-center text-lg font-semibold text-white px-3 py-2 rounded z-20 relative transition duration-300">
-    Blog
-  </span>
-  </Link>
-</motion.div>
+            <Image
+              src="/images/whizzkeeBlogImage.png"
+              alt="Blog Image"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
+            <div className="absolute inset-0 bg-black opacity-30 group-hover:opacity-60 z-10 rounded-lg transition-opacity duration-300"></div>
+            <span className="block text-center text-lg font-semibold text-white px-3 py-2 rounded z-20 relative transition duration-300">
+              Blog
+            </span>
+          </Link>
+        </motion.div>
       </motion.div>
-      
     </div>
   );
 };
